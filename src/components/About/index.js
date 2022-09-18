@@ -5,7 +5,7 @@ function About() {
     return(
         <section>
             <h1 id='about'>Kilimba Dyauli</h1>
-            <img src={coverImage} className="my-2" style={{ width: "10%" }} alt="cover" />
+            <img src={coverImage} className="my-2" style={{ width: "40%" }} alt="cover" />
             <div className='my-2'>
                 <p>
                 Welcome to my portfolio! I'm a junior dev, with a skill set in fullstack development. Some of my skills include 
