@@ -2,18 +2,26 @@ import React, { useState } from "react";
 import About from './components/About';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
+import Resume from './components/Resume';
+import Footer from "./components/Footer";
 import Nav from './components/Nav';
 
 function App() {
-  const [contactSelected, setContactSelected] = useState(false);
   const [ tabs ] = useState([
     {
+      name: '',
+    },
+    {
+      name: 'About Me',
+    },
+    {
       name: 'Portfolio',
-      description: 'find what streaming service your favorite movies are on',
+    },
+    {
+      name: 'Contact',
     },
     {
       name: 'Resume',
-      description: 'find and create recipes',
     }
   ]);
 
@@ -25,19 +33,24 @@ function App() {
         tabs={tabs}
         setCurrentTab={setCurrentTab}
         currentTab={currentTab}
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
       ></Nav>
       <main>
-      {!contactSelected ? (
-          <>
-            <Portfolio currentTab={currentTab}></Portfolio>
-            <About></About>
-          </>
-        ) : (
-            <Contact></Contact>
-          )}
+      {currentTab.name === 'About Me' ? (
+         <About></About>
+      ) :
+      currentTab.name === 'Portfolio' ? (
+         <Portfolio currentTab={currentTab}></Portfolio>
+      ) :
+      currentTab.name === 'Contact' ? (
+         <Contact currentTab={currentTab}></Contact>
+      ) :
+      currentTab.name === 'Resume' ? (
+        <Resume currentTab={currentTab}></Resume>
+     ) :
+      <></>
+      }
       </main>
+      <Footer></Footer>
     </div>
   );
 }
