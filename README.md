@@ -16,7 +16,7 @@
 
 
   ## Installation
-   npm start
+   Link to deployed app: https://intense-fortress-21096.herokuapp.com/
 
   ## Usage
 
