@@ -9,8 +9,6 @@
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)
-  - [Contributing](#contributing)
-  - [Tests](#tests)
   - [Questions](#questions)
 
 
@@ -27,11 +25,6 @@
   ## License
   No license used: https://choosealicense.com/no-permission/
 
-  ## Contributing
-  N/A
-
-  ## Tests
-  N/A
 
   ## Questions
   - Github Username: https://github.com/kilimba7

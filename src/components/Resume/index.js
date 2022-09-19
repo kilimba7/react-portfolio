@@ -1,4 +1,5 @@
 import React from 'react';
+import resumeLink from "../../assets/resume/resume.pdf";
 
 function Resume() {
     return(
@@ -15,7 +16,12 @@ function Resume() {
                 <li>MongoDb</li>
                 <li>NoSql</li>
             </ul>
+
+            <br/>
+
+            <a href={resumeLink} download>PDF version of Resume available to download</a>
         </section>
+
     );
 }
 

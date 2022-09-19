@@ -9,9 +9,6 @@ import Nav from './components/Nav';
 function App() {
   const [ tabs ] = useState([
     {
-      name: '',
-    },
-    {
       name: 'About Me',
     },
     {
