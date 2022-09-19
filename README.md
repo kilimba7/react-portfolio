@@ -16,7 +16,7 @@
 
 
   ## Installation
-   Link to deployed app: https://intense-fortress-21096.herokuapp.com/
+   Link to deployed app: http://kilimba7.github.io/react-portfolio
 
   ## Usage
 
