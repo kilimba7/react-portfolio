@@ -1,5 +1,5 @@
 import React from 'react';
-import projImage from "../../assets/cover/avatar.jpg";
+import projImage from "../../assets/small/project2.jpeg";
 
 function Portfolio() {
     return(

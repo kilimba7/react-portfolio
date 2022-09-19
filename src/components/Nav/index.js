@@ -1,43 +1,47 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Nav(props) {
-    const {
-        aboutSelected,
-        setAboutSelected,
-        resumeSelected,
-        setResumeSelected
-      } = props;
-      
+   const {
+      tabs = [],
+      setCurrentTab,
+      currentTab,
+      contactSelected,
+   } = props;
 
+   useEffect(() => {
+      document.title = capitalizeFirstLetter(currentTab.name);
+   }, [currentTab]);
 
-    return(
-        <header className="flex-row px-1">
-        <h2>
-          <a href="/">
-            Kilimba Dyauli
-          </a>
-        </h2>
-        <nav>
-          <ul className="flex-row">
-            <li className={`mx-2 ${aboutSelected && 'navActive'}`} >
-              <a href="#about" onClick={() => setAboutSelected(true)}>
-                About me
-              </a>
-            </li>
-            <li>
-            <span onClick={() => setAboutSelected(false)}>Contact</span>
-            </li>
-            <li className={`mx-2 ${resumeSelected && 'navActive'}`} >
-            <span onClick={() => setResumeSelected(true)}>Resume</span>
-
-            
-            
-            </li>
-          </ul>
-        </nav>
+   return (
+      <header className="flex-row px-1">
+         <h2>
+            <a href="/" className="py-5">
+               Kilimba Dyauli
+            </a>
+         </h2>
+         <nav>
+            <ul className="flex-row">
+               {tabs.map((tab) => (
+                  <li
+                     className={`mx-1 ${currentTab.name === tab.name && !contactSelected && `navActive`
+                        }`}
+                     key={tab.name}
+                  >
+                     <span onClick={() => {
+                        setCurrentTab(tab);
+                     }}
+                     >
+                        {capitalizeFirstLetter(tab.name)}
+                     </span>
+                  </li>
+               ))}
+            </ul>
+         </nav>
       </header>
-    );
+   );
 }
 
 
 export default Nav;
+
