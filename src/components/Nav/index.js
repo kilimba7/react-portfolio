@@ -3,7 +3,9 @@ import React from 'react';
 function Nav(props) {
     const {
         aboutSelected,
-        setAboutSelected
+        setAboutSelected,
+        resumeSelected,
+        setResumeSelected
       } = props;
       
 
@@ -24,6 +26,12 @@ function Nav(props) {
             </li>
             <li>
             <span onClick={() => setAboutSelected(false)}>Contact</span>
+            </li>
+            <li className={`mx-2 ${resumeSelected && 'navActive'}`} >
+            <span onClick={() => setResumeSelected(true)}>Resume</span>
+
+            
+            
             </li>
           </ul>
         </nav>
