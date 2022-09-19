@@ -4,7 +4,7 @@ import coverImage from "../../assets/cover/avatar.jpg";
 function About() {
     return(
         <section>
-            <h1 id='about'>Kilimba Dyauli</h1>
+            <h1 id='about'>Junior Dev</h1>
             <img src={coverImage} className="my-2" style={{ width: "40%" }} alt="cover" />
             <div className='my-2'>
                 <p>

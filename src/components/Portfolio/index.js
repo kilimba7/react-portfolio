@@ -1,15 +1,15 @@
 import React from 'react';
-import PhotoList from '../PhotoList';
-import { capitalizeFirstLetter } from '../../utils/helpers';
+import projImage from "../../assets/cover/avatar.jpg";
 
-
-function Portfolio(props) {
-    const { currentTab } = props;
+function Portfolio() {
     return(
         <section>
-            <h1>{capitalizeFirstLetter(currentTab.name)}</h1>
-            <p>{currentTab.description}</p>
-            <PhotoList tab={currentTab.name} />
+            <h1 id='about'>Junior Dev</h1>
+            <img src={projImage} className="my-2" style={{ width: "40%" }} alt="cover" />
+            <div className='my-2'>
+                <p> yesssss
+                </p>
+            </div>
         </section>
     );
 }

@@ -1,18 +1,12 @@
-import React, { useEffect } from 'react';
-import { capitalizeFirstLetter } from "../../utils/helpers";
+import React from 'react';
 
 function Nav(props) {
     const {
-        tabs = [],
-        setCurrentTab,
-        currentTab,
-        tabSelected,
-        setTabSelected
+        aboutSelected,
+        setAboutSelected
       } = props;
       
-      useEffect(() => {
-        document.title = capitalizeFirstLetter(currentTab.name);
-      }, [currentTab]);
+
 
     return(
         <header className="flex-row px-1">
@@ -23,30 +17,14 @@ function Nav(props) {
         </h2>
         <nav>
           <ul className="flex-row">
-            <li className={`mx-2 ${tabSelected && 'navActive'}`} >
-              <a href="#about" onClick={() => setTabSelected(false)}>
+            <li className={`mx-2 ${aboutSelected && 'navActive'}`} >
+              <a href="#about" onClick={() => setAboutSelected(true)}>
                 About me
               </a>
             </li>
             <li>
-            <span onClick={() => setTabSelected(true)}>Contact</span>
+            <span onClick={() => setAboutSelected(false)}>Contact</span>
             </li>
-            {tabs.map((tab) => (
-              <li 
-              className={`mx-1 ${
-                currentTab.name === tab.name && !tabSelected && `navActive`
-                }`}
-              key={tab.name}
-              >
-                <span onClick={() => {
-                    setCurrentTab(tab);
-                    setTabSelected(false);
-                  }}
-                >
-                  {capitalizeFirstLetter(tab.name)}
-                </span>
-              </li>
-            ))}
           </ul>
         </nav>
       </header>
