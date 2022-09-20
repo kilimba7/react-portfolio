@@ -16,7 +16,7 @@ function Nav(props) {
    return (
       <header className="flex-row px-1">
          <h2>
-            <a href="/" className="py-5">
+            <a href="http://kilimba7.github.io/react-portfolio" className="py-5">
                Kilimba Dyauli
             </a>
          </h2>

@@ -11,7 +11,7 @@ function Portfolio() {
             <div className='card'>
             <h3>Recipe-Me</h3>
             <img src={recipe} className="my-2" style={{ width: "90%" }} alt="recipe" />
-            <a href="https://github.com/kilimba7/recipe-me">Github Repo</a>
+            <a href="https://github.com/kilimba7/recipe-me">Github</a>
             <br/>
             <a href="https://darioorbita.github.io/Movie-Finder/">Deployed site</a>
             </div>
@@ -19,7 +19,7 @@ function Portfolio() {
             <div className='card'>
             <h3>Movie-Finder</h3>
             <img src={movie} className="my-2" style={{ width: "90%" }} alt="movie" />
-            <a href="https://github.com/kilimba7/movie-finder">Github Repo</a>
+            <a href="https://github.com/kilimba7/movie-finder">Github</a>
             <br/>
             <a href="https://community-recipe-calendar.herokuapp.com/">Deployed site</a>
             </div>
