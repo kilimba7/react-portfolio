@@ -19,7 +19,7 @@ function Resume() {
 
             <br/>
 
-            <a href={resumeLink} download>PDF version of Resume available to download</a>
+          <a href={resumeLink} download>PDF version of Resume available to download</a>
         </section>
 
     );
