@@ -5,12 +5,12 @@ main {
   padding: 50px 30px;
 }
 :root {
-  --primary: #F3A847;
-  --secondary: #F3A847;
+  --primary: #7189FF;
+  --secondary: #7189FF;
   --tertiary: #B12704;
   --light: 89B0AE;
-  --dark: #7CF0BD;
-  --darker: #111111;
+  --dark: #EDF2F4;
+  --darker: #EDF2F4;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
@@ -54,7 +54,7 @@ h6 {
 
 h1 {
   font-size: 2.25rem;
-  color: var(--light);
+  color: var(--primary);
 }
 
 h2 {
@@ -228,7 +228,6 @@ textarea {
 }
 
 .card {
-  width: 25%;
   text-align: center;
 }
 
