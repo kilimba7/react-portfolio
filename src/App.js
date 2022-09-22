@@ -6,6 +6,9 @@ import Resume from './components/Resume';
 import Footer from "./components/Footer";
 import Nav from './components/Nav';
 
+//  We could also be following some better practices here, such as in "App.js" your state vars are being passed into another state in the same component,
+//  which is just one example of how we could clean some things up a bit for a scalable solution. Don't be dismayed by this, though! 
+
 function App() {
   const [ tabs ] = useState([
     {
@@ -39,10 +42,10 @@ function App() {
          <Portfolio currentTab={currentTab}></Portfolio>
       ) :
       currentTab.name === 'Contact' ? (
-         <Contact currentTab={currentTab}></Contact>
+         <Contact></Contact>
       ) :
       currentTab.name === 'Resume' ? (
-        <Resume currentTab={currentTab}></Resume>
+        <Resume></Resume>
      ) :
       <></>
       }
