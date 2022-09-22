@@ -5,12 +5,11 @@ main {
   padding: 50px 30px;
 }
 :root {
-  --primary: #7189FF;
-  --secondary: #7189FF;
+  --primary: #D0FFCE;
+  --secondary: #3D2B3D;
   --tertiary: #B12704;
   --light: 89B0AE;
-  --dark: #EDF2F4;
-  --darker: #EDF2F4;
+  --dark: #785964;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
@@ -80,6 +79,7 @@ h6 {
 p {
   font-size: 1.1rem;
   margin-top: 0;
+  color: var(--primary)
 }
 
 a {
@@ -100,6 +100,7 @@ header {
 header a {
   color: var(--light);
 }
+
 
 button {
   font-size: 1rem;
@@ -122,6 +123,14 @@ button[disabled] {
   opacity: .8;
 }
 
+
+ul {
+  color: var(--primary);
+}
+
+label {
+  color: var(--primary)
+}
 
 
 
@@ -227,12 +236,27 @@ textarea {
   padding-bottom: var(--spacing-two);
 }
 
+.parent{
+  background-color: var(--primary);
+  padding: 30px 10px 30px 10px;
+
+}
+
+@keyframes left-to-right { 
+  100% {
+    transform: translateX(400%)
+  }
+}
+
+.child {
+  transform: transform1s ease-in;
+  animation: left-to-right 5s ease-in forwards infinite alternate;
+  background-color: var(--darker);
+}
+
 .card {
   text-align: center;
 }
-
-
-
 
 button {
 	background: var(--primary);
@@ -256,6 +280,10 @@ a {
 	
 }
 
+
 .navActive {
   color: var(--secondary);
 }
+
+
+

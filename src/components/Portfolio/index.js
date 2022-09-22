@@ -10,7 +10,7 @@ function Portfolio(props) {
       <p>{currentTab.description}</p>
       {currentTab.description}
       <Projects project={currentTab.name} />
-      <a href="https://github.com/kilimba7/recipe-me">Github Recipe Me</a>
+      <a href="https://github.com/kilimba7/recipe-me">Github</a>
     </section>
   );
 }
