@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from "../../utils/helpers";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHouse } from "@fortawesome/free-solid-svg-icons"
 
 function Nav(props) {
    const {
@@ -16,8 +18,11 @@ function Nav(props) {
    return (
       <header className="flex-row px-1">
          <h1>
+         Kilimba
+
+         
             <a href="http://kilimba7.github.io/react-portfolio" className="py-5">
-               Kilimba Dyauli
+               <FontAwesomeIcon icon={faHouse}></FontAwesomeIcon>
             </a>
          </h1>
          <nav>
