@@ -6,11 +6,12 @@ main {
 }
 :root {
   --primary: #F6F4D2;
-  --secondary: #75C9C8;
-  --tertiary: rgb(70, 3, 100);
+  --secondary: #D6CFCB;
+  --icon: #7189FF;
+  --tertiary: #565264;
   --parent: #DED9E2;
-  --text: #F6F4D2;
-  --dark: #C0B9DD;
+  --text: #D6CFCB;
+  --dark: #648767;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
@@ -54,14 +55,14 @@ h6 {
 
 h1 {
   font-size: 2.25rem;
-  color: var(--text);
+  color: var(--dark);
   background-color: var(--secondary);
   padding: 10px;
 }
 
 h2 {
   font-size: 2rem;
-  color: var(--text);
+  color: var(--dark);
   background-color: var(--secondary);
   padding: 10px;
   margin: 20px 20px;
@@ -297,7 +298,7 @@ a {
   padding: 10px;
   margin: 20px;
   color: var(--primary);
-  background-color: var(--tertiary);
+  background-color: var(--icon);
 }
 
 
