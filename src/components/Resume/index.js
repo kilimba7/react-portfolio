@@ -5,28 +5,25 @@ import resumeLink from "../../assets/resume/resume.pdf";
 
 function Resume() {
     return(
-        <section>
-            <h1>
-            <a href={resumeLink} download>
-            <FontAwesomeIcon icon={faDownload}></FontAwesomeIcon>
-          </a>
-                  Front End Skills</h1>
-           
+        <section className='card'>
+            <h2> Resume </h2>
             <ul className='my-2'>
                 <li>React</li>
                 <li>CSS</li>
                 <li>HTML</li>
             </ul>
-            <h1>
-            <a href={resumeLink} download>
+            <span className='icon'> Front End Skills <a href={resumeLink} download>
             <FontAwesomeIcon icon={faDownload}></FontAwesomeIcon>
-          </a>
-                  Back End Skills</h1>
+          </a> </span>
             <ul className='my-2'>
                 <li>MySql</li>
                 <li>MongoDb</li>
                 <li>NoSql</li>
             </ul>
+
+            <span className='icon'> Front End Skills <a href={resumeLink} download>
+            <FontAwesomeIcon icon={faDownload}></FontAwesomeIcon>
+          </a> </span>
 
             <br/>
 

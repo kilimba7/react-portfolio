@@ -7,6 +7,7 @@ main {
 :root {
   --primary: #F6F4D2;
   --secondary: #75C9C8;
+  --tertiary: rgb(70, 3, 100);
   --parent: #DED9E2;
   --text: #F6F4D2;
   --dark: #C0B9DD;
@@ -60,6 +61,10 @@ h1 {
 
 h2 {
   font-size: 2rem;
+  color: var(--text);
+  background-color: var(--secondary);
+  padding: 10px;
+  margin: 20px 20px;
 }
 
 h3 {
@@ -288,9 +293,16 @@ a {
   padding: 40px;
 }
 
+.icon {
+  padding: 10px;
+  margin: 20px;
+  color: var(--primary);
+  background-color: var(--tertiary);
+}
+
 
 .navActive {
-  color: var(--secondary);
+  color: var(--tertiary);
 }
 
 
