@@ -21,7 +21,7 @@ function Resume() {
                 <li>NoSql</li>
             </ul>
 
-            <span className='icon'> Front End Skills <a href={resumeLink} download>
+            <span className='icon'> Back End Skills <a href={resumeLink} download>
             <FontAwesomeIcon icon={faDownload}></FontAwesomeIcon>
           </a> </span>
 
