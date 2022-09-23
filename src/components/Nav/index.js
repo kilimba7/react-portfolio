@@ -16,13 +16,7 @@ function Nav(props) {
 
    return (
       <header className="flex-row px-1">
-         <h1>
-         Kilimba Dyauli
-
-         
-            <a href="http://kilimba7.github.io/react-portfolio" className="py-5">
-            </a>
-         </h1>
+        
          <nav>
             <ul className="flex-row">
                {tabs.map((tab) => (

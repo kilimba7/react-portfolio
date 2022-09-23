@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import About from './components/About';
-import Contact from './components/Contact';
-import Portfolio from './components/Portfolio';
-import Resume from './components/Resume';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Portfolio from './pages/Portfolio';
+import Resume from './pages/Resume';
+import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Nav from './components/Nav';
+
+
 
 
 //  We could also be following some better practices here, such as in "App.js" your state vars are being passed into another state in the same component,
@@ -30,28 +32,28 @@ function App() {
 
   return (
     <div>
-      <Nav
+      <Header
         tabs={tabs}
         setCurrentTab={setCurrentTab}
         currentTab={currentTab}
-      ></Nav>
+      ></Header>
       <main>
       {currentTab.name === 'About Me' ? (
-         <About></About>
+         <About />
       ) :
       currentTab.name === 'Portfolio' ? (
          <Portfolio currentTab={currentTab}></Portfolio>
       ) :
       currentTab.name === 'Contact' ? (
-         <Contact></Contact>
+         <Contact />
       ) :
       currentTab.name === 'Resume' ? (
-        <Resume></Resume>
+        <Resume />
      ) :
       <></>
       }
       </main>
-      <Footer></Footer>
+      <Footer />
     </div>
   );
 }
