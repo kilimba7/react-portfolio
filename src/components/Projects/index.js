@@ -19,6 +19,21 @@ const Projects = ({ project }) => {
       project: 'Portfolio',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+    },
+    {
+        name: 'Tech-Blog',
+        project: 'Portfolio',
+        description: 'https://morning-coast-35493.herokuapp.com/'
+    },
+    {
+        name: 'Note-Taker',
+        project: 'Portfolio',
+        description: 'https://github.com/kilimba7/note-taker'
+    },
+    {
+        name: 'Text-Editor',
+        project: 'Portfolio',
+        description: 'https://vast-caverns-25905.herokuapp.com/'
     }
   ]);
 
@@ -33,10 +48,11 @@ const Projects = ({ project }) => {
         //   TODO: Ask what .default does 
             src={require(`../../assets/small/${i}.jpeg`)}
             alt={image.name}
-            className="img-thumbnail mx-1"
+            className="project"
             key={image.name}
           />
         ))}
+
         
       </div>
     </div>

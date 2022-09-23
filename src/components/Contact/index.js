@@ -36,7 +36,9 @@ function Contact() {
 
     return (
       <section>
-      <h1>Contact me</h1>
+     
+      <h1 className='card'>Contact me</h1>
+      <div>
       <form id="contact" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
@@ -57,6 +59,7 @@ function Contact() {
         )}
         <button data-testid="button" type="submit">Submit</button>
       </form>
+      </div>
     </section>
       );
     }

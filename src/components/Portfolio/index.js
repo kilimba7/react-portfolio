@@ -6,11 +6,12 @@ function Portfolio(props) {
   const { currentTab } = props;
   return (
     <section>
+    <div className='card'>
       <h1>Projects</h1>
       <p>{currentTab.description}</p>
       {currentTab.description}
       <Projects project={currentTab.name} />
-      <a href="https://github.com/kilimba7/recipe-me">Github</a>
+    </div>   
     </section>
   );
 }
