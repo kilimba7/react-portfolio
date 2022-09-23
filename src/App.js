@@ -3,7 +3,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
-import Header from "./components/Header";
+import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 
 
@@ -32,11 +32,11 @@ function App() {
 
   return (
     <div>
-      <Header
+      <Nav
         tabs={tabs}
         setCurrentTab={setCurrentTab}
         currentTab={currentTab}
-      ></Header>
+      ></Nav>
       <main>
       {currentTab.name === 'About Me' ? (
          <About />
