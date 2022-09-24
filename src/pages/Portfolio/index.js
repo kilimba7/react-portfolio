@@ -8,8 +8,10 @@ function Portfolio(props) {
     <section>
     <div className='card'>
       <h1>Projects</h1>
-      <p>{currentTab.description}</p>
-      {currentTab.description}
+      
+     <p >{currentTab.url1} </p>
+   
+     
       <Projects project={currentTab.name} />
     </div>   
     </section>

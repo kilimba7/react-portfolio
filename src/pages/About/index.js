@@ -6,7 +6,7 @@ function About() {
         <section>
       
             <div className='card'>
-            <img src={coverImage} className="child" style={{ width: "20%" }} alt="cover" />
+            <img src={coverImage} className="prof-img" style={{ width: "20%" }} alt="cover" />
             <h1 className='my-2'>Bio</h1>
                 <p>
                 Welcome to my portfolio! I'm a junior dev, with a skill set in fullstack development. Some of my skills include 

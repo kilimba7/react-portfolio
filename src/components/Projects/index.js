@@ -1,47 +1,66 @@
 import React, { useState } from 'react';
+import Modal from "../Modal";
 
 const Projects = ({ project }) => {
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currentPhoto, setCurrentPhoto] = useState();
+
   const [photos] = useState([
+  
+
     {
       name: 'Movie-Finder',
       project: 'Portfolio',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+      url1: 'https://darioorbita.github.io/Movie-Finder/',
+      url2: 'https://github.com/kilimba7/Movie-Finder'
     },
     {
-      name: 'portfolio',
+      name: 'Text-Editor',
       project: 'Portfolio',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+      url1: 'https://vast-caverns-25905.herokuapp.com/',
+      url2: 'https://github.com/kilimba7/text-editor'
+
     },
     {
-      name: 'Profile',
+      name: 'Recipe-Me',
       project: 'Portfolio',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+      url1: 'https://community-recipe-calendar.herokuapp.com/',
+      url2: 'https://github.com/kilimba7/Movie-Finder'
     },
     {
         name: 'Tech-Blog',
         project: 'Portfolio',
-        description: 'https://morning-coast-35493.herokuapp.com/'
+        url1: 'https://morning-coast-35493.herokuapp.com/',
+        url2: 'https://github.com/kilimba7/tech-blog'
+        
     },
     {
         name: 'Note-Taker',
         project: 'Portfolio',
-        description: 'https://github.com/kilimba7/note-taker'
+        url1: 'https://github.com/kilimba7/note-taker',
+        url2: 'https://github.com/kilimba7/note-taker'
     },
     {
-        name: 'Text-Editor',
-        project: 'Portfolio',
-        description: 'https://vast-caverns-25905.herokuapp.com/'
-    }
+      name: 'Team-Profile',
+      project: 'Portfolio',
+      url1: 'https://darioorbita.github.io/Movie-Finder/',
+      url2: 'https://github.com/kilimba7/Movie-Finder'
+    },
   ]);
 
   const currentPhotos = photos.filter(photo => photo.project === project);
   
+  const toggleModal = (image, i) => {
+    setCurrentPhoto({ ...image, index: i });
+    setIsModalOpen(!isModalOpen);
+  };
   
   return (
     <div>
+      {isModalOpen && (
+        <Modal onClose={toggleModal} currentPhoto={currentPhoto} />
+      )}
       <div className="flex-row">
         {currentPhotos.map((image, i) => (
           <img
@@ -49,12 +68,17 @@ const Projects = ({ project }) => {
             src={require(`../../assets/small/${i}.jpeg`)}
             alt={image.name}
             className="project"
+            onClick={() => toggleModal(image, i)}
             key={image.name}
           />
+          
         ))}
 
         
+
+        
       </div>
+      
     </div>
   );
 };
