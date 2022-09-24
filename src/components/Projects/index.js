@@ -26,7 +26,7 @@ const Projects = ({ project }) => {
       name: 'Recipe-Me',
       project: 'Portfolio',
       url1: 'https://community-recipe-calendar.herokuapp.com/',
-      url2: 'https://github.com/kilimba7/Movie-Finder'
+      url2: 'https://github.com/kilimba7/Recipe-Me'
     },
     {
         name: 'Tech-Blog',
@@ -38,14 +38,14 @@ const Projects = ({ project }) => {
     {
         name: 'Note-Taker',
         project: 'Portfolio',
-        url1: 'https://github.com/kilimba7/note-taker',
+        url1: 'https://kilimba-note-taker.herokuapp.com/',
         url2: 'https://github.com/kilimba7/note-taker'
     },
     {
       name: 'Team-Profile',
       project: 'Portfolio',
-      url1: 'https://darioorbita.github.io/Movie-Finder/',
-      url2: 'https://github.com/kilimba7/Movie-Finder'
+      url1: 'https://drive.google.com/file/d/1FQz6FwwcrzI9mvRzEWKhW1vaBp68_C6M/view',
+      url2: 'https://github.com/kilimba7/profile-generator'
     },
   ]);
 
