@@ -70,6 +70,7 @@ h2 {
 
 h3 {
   font-size: 1.75rem;
+  color: var(--primary);
 }
 
 h4 {
@@ -244,22 +245,45 @@ textarea {
   padding-bottom: var(--spacing-two);
 }
 
+/* .child {
+  transform: transform1s ease-in;
+  animation: up-down 2s ease-in forwards infinite alternate;
+  background-color: var(--darker);
+}
+
 .parent{
   background-color: var(--parent);
-  padding: 30px 10px 30px 10px;
+  padding: 0px;
 
 }
 
-@keyframes left-to-right { 
+@keyframes up-down { 
   100% {
-    transform: translateX(400%)
+    transform: translateY(10%)
+  }
+} */
+
+.animate {
+  transform: transform1s ease-in;
+  animation: spin 4s ease-in forwards infinite;
+  font-size: 1.5rem;
+}
+
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
   }
 }
 
-.child {
-  transform: transform1s ease-in;
-  animation: left-to-right 5s ease-in forwards infinite alternate;
-  background-color: var(--darker);
+.globe {
+  font-size: 2.5rem;
+  color: var(--parent);
+  padding: 10px;
+  margin-left: 20px;
+
 }
 
 .card {
@@ -288,6 +312,11 @@ a {
 	margin-left: -2px;
 	margin-right: -2px;
 	
+}
+
+img {
+  background-color: var(--parent);
+  padding: 20px;
 }
 
 .project {

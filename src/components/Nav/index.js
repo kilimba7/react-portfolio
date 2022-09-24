@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import Animation from '../Animations ';
 import { capitalizeFirstLetter } from "../../utils/helpers";
 
 
@@ -15,14 +16,10 @@ function Nav(props) {
    }, [currentTab]);
 
    return (
-      <header className="flex-row px-1">
-
-         <h1>
-         Kilimba Dyauli
-            <a href="http://kilimba7.github.io/react-portfolio" className="">
+      <header className="flex-row px-1">  
+      <a href="http://kilimba7.github.io/react-portfolio" className="">
+      <Animation />
             </a>
-         </h1> 
-        
          <nav>
             <ul className="flex-row">
                {tabs.map((tab) => (
