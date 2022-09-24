@@ -1,15 +1,15 @@
 import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleNotch, faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { faSun, faEarthAfrica } from "@fortawesome/free-solid-svg-icons";
 
 function Animation() {
     return(
         <article>
             <div>
             
-            <span className='globe'><FontAwesomeIcon icon={faGlobe}></FontAwesomeIcon> Kilimba </span>
+            <span className='globe'><FontAwesomeIcon icon={faEarthAfrica}></FontAwesomeIcon> Kilimba </span>
             <h3 className='animate'>
-            <FontAwesomeIcon icon={faCircleNotch} ></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faSun} ></FontAwesomeIcon>
          </h3> 
          </div>
 

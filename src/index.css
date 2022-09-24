@@ -246,27 +246,11 @@ textarea {
   padding-bottom: var(--spacing-two);
 }
 
-/* .child {
-  transform: transform1s ease-in;
-  animation: up-down 2s ease-in forwards infinite alternate;
-  background-color: var(--darker);
-}
 
-.parent{
-  background-color: var(--parent);
-  padding: 0px;
-
-}
-
-@keyframes up-down { 
-  100% {
-    transform: translateY(10%)
-  }
-} */
 
 .animate {
   transform: transform1s ease-in;
-  animation: spin 4s ease-in forwards infinite;
+  animation: spin 4s ease-in forwards infinite alternate;
   font-size: 1.5rem;
 }
 
@@ -275,13 +259,13 @@ textarea {
       transform:rotate(0deg);
   }
   to {
-      transform:rotate(360deg);
+      transform:rotate(180deg);
   }
 }
 
 .globe {
   font-size: 2.5rem;
-  color: var(--parent);
+  color: var(--tertiary);
   padding: 10px;
   margin-left: 20px;
 
