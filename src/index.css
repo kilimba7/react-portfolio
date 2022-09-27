@@ -7,7 +7,7 @@ main {
 :root {
   --primary: #F6F4D2;
   --secondary: #D6CFCB;
-  --icon: #7189FF;
+  --icon: #7e8edf;
   --tertiary: #565264;
   --parent: #DED9E2;
   --text: #D6CFCB;
@@ -75,6 +75,10 @@ h3 {
 
 h4 {
   font-size: 1.5rem;
+  color: var(--parent);
+  text-decoration:var(--icon) underline ;
+
+  
 }
 
 h5 {
@@ -334,7 +338,7 @@ a {
 .project {
   padding: 40px;
   border: var(--parent);
-  border-style: dashed;
+  border-style: double;
 }
 
 .icon {
