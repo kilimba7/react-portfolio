@@ -18,7 +18,7 @@
 
   ## Usage
 
-  ![Demo](/src/assets/small/demo.jpg?raw=true "My DEMO")
+  ![Demo](/src/assets/small/demo.jpg?raw=true "My DEMO 3")
   
   
 

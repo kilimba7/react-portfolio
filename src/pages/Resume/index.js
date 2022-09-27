@@ -7,7 +7,7 @@ function Resume() {
     return(
         <section className='card'>
             <h2> Resume </h2>
-            <ul className='my-2'>
+            <ul >
                 <li>React</li>
                 <li>CSS</li>
                 <li>HTML</li>
@@ -15,7 +15,7 @@ function Resume() {
             <span className='icon'> Front End Skills <a href={resumeLink} download>
             <FontAwesomeIcon icon={faDownload}></FontAwesomeIcon>
           </a> </span>
-            <ul className='my-2'>
+            <ul >
                 <li>MySql</li>
                 <li>MongoDb</li>
                 <li>NoSql</li>
