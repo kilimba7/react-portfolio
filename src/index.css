@@ -337,8 +337,6 @@ a {
 
 .project {
   padding: 40px;
-  border: var(--parent);
-  border-style: double;
 }
 
 .icon {
