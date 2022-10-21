@@ -10,7 +10,7 @@ function Footer() {
         <FontAwesomeIcon icon= {faGithub}></FontAwesomeIcon>
       </a>
 
-      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.linkedin.com/in/kilimbadyauli/ " target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon= {faLinkedin}></FontAwesomeIcon>
       </a>
 

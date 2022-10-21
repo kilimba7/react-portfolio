@@ -10,16 +10,20 @@ function Resume() {
            
             <ul >
                 <h4> Front End Skills </h4>
-                <li>React</li>
+                <li>JavaScript</li>
                 <li>CSS</li>
+                <li>React</li>
                 <li>HTML</li>
             </ul>
             
             <ul >
                 <h4> Back End Skills</h4>
-                <li>MySql</li>
-                <li>MongoDb</li>
                 <li>NoSql</li>
+                <li>MongoDB</li>
+                <li>GraphQL</li>
+                <li>MySQL</li>
+                <li>Node</li>
+                <li>Express</li>
             </ul>
 
             <span className='icon'> Download Resume <a href={resumeLink} download>

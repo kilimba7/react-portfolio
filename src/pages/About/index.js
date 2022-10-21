@@ -9,8 +9,10 @@ function About() {
             <img src={coverImage} className="prof-img" style={{ width: "20%" }} alt="cover" />
             <h1 className='my-2'>Bio</h1>
                 <p>
-                Welcome to my portfolio! I'm a junior dev, with a skill set in fullstack development. Some of my skills include 
-                  Test Driven Development and Object Oriented Programming. I've attached two of my projects below. Thank you!
+                Front-end web developer utilizing my healthcare background to create inclusive and user friendly apps, built
+with best practices in mind. Recently earned a certificate in full stack development from the University of
+Minnesota Coding Bootcamp. Some of my strengths include communication, troubleshooting/testing and
+creativity.
                 </p>
             </div>
         </section>
