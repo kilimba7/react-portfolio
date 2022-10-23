@@ -7,7 +7,7 @@ function Resume() {
     return(
         <section className='card'>
             <h2 > Resume </h2>
-           
+           <div className='flex'>
             <ul >
                 <h4> Front End Skills </h4>
                 <li>JavaScript</li>
@@ -18,13 +18,13 @@ function Resume() {
             
             <ul >
                 <h4> Back End Skills</h4>
-                <li>NoSql</li>
                 <li>MongoDB</li>
                 <li>GraphQL</li>
                 <li>MySQL</li>
                 <li>Node</li>
                 <li>Express</li>
             </ul>
+            </div>
 
             <span className='icon'> Download Resume <a href={resumeLink} download>
             <FontAwesomeIcon icon={faDownload}></FontAwesomeIcon></a></span>

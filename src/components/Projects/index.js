@@ -13,20 +13,23 @@ const Projects = ({ project }) => {
       name: 'Movie-Finder',
       project: 'Portfolio',
       url1: 'https://darioorbita.github.io/Movie-Finder/',
-      url2: 'https://github.com/kilimba7/Movie-Finder'
+      url2: 'https://github.com/kilimba7/Movie-Finder',
+      desc: 'Allows users to find their favorite movies and what platform they are available on'
     },
     {
       name: 'Apex-Filter',
       project: 'Portfolio',
       url1: 'https://gamer-6.herokuapp.com/',
-      url2: 'https://github.com/kilimba7/apex-filter'
+      url2: 'https://github.com/kilimba7/apex-filter',
+      desc: 'Connects users looking for a teammate to a filterable player pool'
 
     },
     {
       name: 'Recipe-Me',
       project: 'Portfolio',
       url1: 'https://community-recipe-calendar.herokuapp.com/',
-      url2: 'https://github.com/kilimba7/Recipe-Me'
+      url2: 'https://github.com/kilimba7/Recipe-Me',
+      desc: 'Users can share their favorite recipes, find a random one, and even create their own!'
     },
    
   ]);
@@ -46,7 +49,6 @@ const Projects = ({ project }) => {
       <div className="flex-row">
         {currentPhotos.map((image, i) => (
           <img
-        //   TODO: Ask what .default does 
             src={require(`../../assets/small/${i}.jpeg`)}
             alt={image.name}
             className="project"

@@ -7,7 +7,7 @@ main {
 :root {
   --primary: #F6F4D2;
   --secondary: #D6CFCB;
-  --icon: #7e8edf;
+  --icon: #6A6B83;
   --tertiary: #565264;
   --parent: #F1F2F6;
   --text: #D6CFCB;
@@ -76,9 +76,8 @@ h3 {
 h4 {
   font-size: 1.5rem;
   color: var(--parent);
-  text-decoration:var(--icon) underline ;
-
-  
+  background-color: var(--icon);
+  padding: 10px;
 }
 
 h5 {
@@ -116,26 +115,6 @@ header a {
 }
 
 
-button {
-  font-size: 1rem;
-  text-decoration: none;
-  padding: 0.25rem 1rem;
-  border-radius: .5rem;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  margin: 0 1px;
-  background-color: var(--secondary);
-}
-
-button:hover {
-  opacity: .8;
-}
-
-button[disabled] {
-  cursor: default;
-  opacity: .8;
-}
 
 
 ul {
@@ -183,6 +162,30 @@ textarea {
 	height: 120px;
 	border: 3px solid #cccccc;
 	padding: 5px;
+}
+
+button {
+	background: var(--primary);
+	border: 0;
+	border-radius: 5px;
+	color: var(--dark);
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 30px;
+	padding: 10px 15px;	
+}
+
+
+
+a {
+	border-radius: 5px;
+	color: var(--primary);
+	font-weight: 600;
+	padding: 2px 4px;
+	margin-left: -2px;
+	margin-right: -2px;
+	
 }
 
 .container {
@@ -292,7 +295,7 @@ textarea {
 }
 
 .modalContainer {
-  background: var(--tertiary);
+  background: var(--icon);
   border-radius: 5px;
   max-width: 100%;
   margin: 50px auto;
@@ -306,28 +309,10 @@ textarea {
   margin-bottom: 25px;
 }
 
-button {
-	background: var(--primary);
-	border: 0;
-	border-radius: 5px;
-	color: var(--dark);
-	cursor: pointer;
-	font-size: 16px;
-	font-weight: 600;
-	margin-bottom: 30px;
-	padding: 10px 15px;	
-}
 
-
-
-a {
-	border-radius: 5px;
-	color: var(--primary);
-	font-weight: 600;
-	padding: 2px 4px;
-	margin-left: -2px;
-	margin-right: -2px;
-	
+.flex {
+  display: flex;
+  justify-content: space-around;
 }
 
 .prof-img {
@@ -342,7 +327,7 @@ a {
 .icon {
   padding: 10px;
   margin: 20px;
-  color: var(--primary);
+  color: var(--parent);
   background-color: var(--icon);
 }
 

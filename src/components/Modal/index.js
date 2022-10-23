@@ -4,12 +4,13 @@ import { faCloud } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Modal = ({ onClose, currentPhoto }) => {
-  const { name, url1, url2 } = currentPhoto;
+  const { name, url1, url2, desc } = currentPhoto;
 
   return (
     <div className="modalBackdrop">
       <div className="modalContainer">
         <h3 className="modalTitle">{name} </h3>
+        <p>{desc}</p>
         
         <a href={url1} target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon= {faCloud}></FontAwesomeIcon>
